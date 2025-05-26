@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS//Internal CSS/External CSS/Inline CSS</title>
+
+    <link rel="stylesheet" href="./ExternalCSS Styling.css">
+    <!-- Here if I use try to modify the same element from two different 
+    places then  the one at the bottom will be applied that is called 
+    cascading and it is just like water falls, the one at the bottom
+    is at reach first -->
+    <style>
+        /* As we have used the elemt's name that is h1 we call it a 
+        "Element selector" or a "Type selector" */
+        h1 {
+            color: red;
+            background-color: rgb(190, 165, 131);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I Am Heading 1</h1>
+    <h2>I Am Heading 2</h2>
+    <h3 style="color: aquamarine; background-color: rgb(203, 141, 59);">I Am Heading 3</h3>
+</body>
+
+</html>

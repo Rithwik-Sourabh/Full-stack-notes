@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color: red; margin: 20px;">
+        <h1>Unordered List of Grocery List</h1>
+        <ul type="square"><!--using the type attribute we can style the bullet points of the un-ordered list-->
+            <li>Apple</li>
+            <li>Milk</li>
+            <li>Veggies</li>
+        </ul>
+        <h1>Ordered list of the software instalation</h1>
+        <ol type="I">
+            <li>Go to the wesite</li>
+            <li>Download setup</li>
+            <li>Install the application</li>
+            <li>Run the application</li>
+        </ol>
+    </div>
+
+    <div style="background-color: yellow; margin: 20px;">
+        <table border="">
+            <caption> Student's Mraks</caption>
+            <thead>
+                <th>Roll no'</th>
+                <th>Name</th>
+                <th>Maths</th>
+                <th colspan="2">Physics</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>456</td>
+                    <td>Anushka</td>
+                    <td>95</td>
+                    <td>92</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td>698</td>
+                    <td>Mrinal</td>
+                    <td>97</td>
+                    <td>88</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>420</td>
+                    <td>Sourabh</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>99</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background-color: gray; margin: 20px;">
+        <form action="">
+            <label for="">Name</label>
+            <input placeholder="Name" type="text">
+
+            <label for="">Email</label>
+            <input placeholder="Email" type="email">
+
+            <label for="">Password</label>
+            <input placeholder="Password" type="password">
+
+            <label>Date of Birth</label>
+            <input type="date">
+
+            <label for="">Upload CV</label>
+            <input type="file">
+
+            <h1>Choose your dish</h1>
+            <label for="">Pizza</label>
+            <input type="checkbox">
+            <label for="">Burger</label>
+            <input type="checkbox">
+            <label for="">Pasta</label>
+            <input type="checkbox">
+
+            <h1>Select your Gender</h1>
+            <label for="">Male</label>
+            <input name="Gender" type="radio">
+            <label for="">female</label>
+            <input name="Gender" type="radio">
+            <!-- As I have given the the name as Gender for for the radio buttons, now we can only selct one of the radio button, if we select the other radio button with the name as gender, It will automatically undo the selection of the previous selction and select the current radio box, this name tag wont work on the checkbox-->
+
+            <h2>Slect your work sector</h2>
+            <select name="" id="">
+                <option value=""></option>
+                <option value="">Government</option>
+                <option value="">Private</option>
+                <option value="">Education</option>
+            </select>
+        </form>
+    </div>
+
+</body>
+
+</html>
