@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Modal</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        * {
-            /* "*" is a universal selector, using this we can select the entire html page*/
-            margin: 0px;
-            box-sizing: border-box;
-        }
+      /* universal selector */
+      * {
+        margin: 0px;
+      }
+     .container {
+        background-color: lightgreen;
+        /* margin: 20px 30px 40px 15px; */
+        /* top , right , bottom , left */
 
-        .container {
-            width: 800px;
-            height: 150px;
-            background-color: coral;
-            /* margin-top: 30px;
-            margin-left: 50px;
-            margin-right: 20px;
-            margin-bottom: 30px; */
-            margin: 20PX 30PX 40px 50px;
-            /*when there is a ovelap of top and bottom or left and right then the mardin overlap occurs and the grater value is concidered*/
-            /*the first value cronology is top right bottom and left that is in clock wise directions or positions*/
+        /* margin: 20px 30px 40px; */
+        /* top , 2nd value - left and right , bottom */
+        margin: 20px 30px;
+        /* top and bottom , left and right */
+      }
+      /* .container1 {
+        margin-bottom: 50px;
+      }
 
-            /* Paddings: If we give the padding of 100px after I have incorporated the box-sizing attribute then ovelap of the padding might
-            occure */
-            padding: 10px;
+      .container2 {
+        margin-top: 30px;
+      }
 
+      .container3{
+         margin-right: 40px;
+         margin-left: 50px;
+      } */
 
-            /* Borders:three rules 1.first should provide width, 2.type of the border, 3. color of the border */
-            border: 6px solid black;
-            border-radius: 60px;
-        }
+     
     </style>
-</head>
+  </head>
+  <body>
+    <div class="container container1">
+      <h1>This is Heading 1</h1>
 
-<body>
-    <div class="container">
-        <h1>I am heading 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas deleniti iste dicta nesciunt, hic
-            culpa neque amet ullam facilis sit officia adipisci debitis, repudiandae nobis? Dolor placeat mollitia
-            magni, fugit cupiditate molestiae? Non obcaecati suscipit earum perspiciatis repellat odit in voluptatum
-            neque incidunt, optio dolore necessitatibus omnis architecto magni!</p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+        deserunt quisquam repellat aliquam est delectus? Animi laboriosam dicta
+        enim recusandae, nostrum dignissimos facilis nemo, soluta illum
+        doloremque quod! Maxime quae hic dolorum enim labore officia dignissimos
+        quia rem doloribus odit.
+      </p>
     </div>
-    <div class="container">
-        <h1>I am heading 2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas deleniti iste dicta nesciunt, hic
-            culpa neque amet ullam facilis sit officia adipisci debitis, repudiandae nobis? Dolor placeat mollitia
-            magni, fugit cupiditate molestiae? Non obcaecati suscipit earum perspiciatis repellat odit in voluptatum
-            neque incidunt, optio dolore necessitatibus omnis architecto magni!</p>
-    </div>
-    <div class="container">
-        <h1>I am heading 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas deleniti iste dicta nesciunt, hic
-            culpa neque amet ullam facilis sit officia adipisci debitis, repudiandae nobis? Dolor placeat mollitia
-            magni, fugit cupiditate molestiae? Non obcaecati suscipit earum perspiciatis repellat odit in voluptatum
-            neque incidunt, optio dolore necessitatibus omnis architecto magni!</p>
-    </div>
-</body>
 
+    <div class="container container2">
+      <h1>This is Heading 2</h1>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+        deserunt quisquam repellat aliquam est delectus? Animi laboriosam dicta
+        enim recusandae, nostrum dignissimos facilis nemo, soluta illum
+        doloremque quod! Maxime quae hic dolorum enim labore officia dignissimos
+        quia rem doloribus odit.
+      </p>
+    </div>
+
+    <div class="container container3">
+      <h1>This is Heading 3</h1>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+        deserunt quisquam repellat aliquam est delectus? Animi laboriosam dicta
+        enim recusandae, nostrum dignissimos facilis nemo, soluta illum
+        doloremque quod! Maxime quae hic dolorum enim labore officia dignissimos
+        quia rem doloribus odit.
+      </p>
+    </div>
+  </body>
 </html>
