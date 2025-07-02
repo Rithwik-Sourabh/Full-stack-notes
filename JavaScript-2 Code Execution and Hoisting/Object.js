@@ -25,20 +25,20 @@
 // Create an Object for Captain America
 
 let cap = {
-  name: "Steve Rogers",
-  age: 105,
+    name: "Steve Rogers",
+    age: 105,
 
-  friends: ["Bucky", "Bruce Banner", "Tony Stark"],
+    friends: ["Bucky", "Bruce Banner", "Tony Stark"],
 
-  address: {
-    country: "USA",
-    city: {
-      name: "Brooklyn",
-      pincode: 123456,
+    address: {
+        country: "USA",
+        city: {
+            name: "Brooklyn",
+            pincode: 123456,
+        },
     },
-  },
 
-  isAvenger: true,
+    isAvenger: true,
 }
 
 // How to access object properties and how to maipulate them
@@ -61,7 +61,7 @@ console.log(cap['address']['country'])
 // manipulate values
 
 // add captain america movies
-cap.movies = ['civil war' , 'infinity war', 'winter soldier']
+cap.movies = ['civil war', 'infinity war', 'winter soldier']
 
 cap.movies.pop()
 
