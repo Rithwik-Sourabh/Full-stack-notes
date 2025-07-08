@@ -17,8 +17,10 @@ function reverseWords(sentence) {
            reversedArr.push(words.pop())
      }
 
-     return reversedArr.join(" ")//here I am asking js to join the characters when ever it
-                                // encounters space using the key word "join" and make it into a sting
+     return reversedArr.join(" ")//here I am asking js to join the characters using space, 
+                                // using the key word "join" and make it into a sting,
+                                //here if I use "join("a")" it would be "WorldaHello"
+                                //as I have used "join(" ")" it is "World Hello"
 
 
 }
