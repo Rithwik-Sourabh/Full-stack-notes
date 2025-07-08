@@ -1,17 +1,20 @@
 :root{
-    --pimary:#819595;
-    --bgDark: #000000;
-    --white:#B1B6A6;
-    --secondary:#7F9183;
-    --bglight:#B8B8AA;
+    --pimary:#84A98C;
+    --bgDark: #2F3E46;
+    --white:#CAD2C5;
+    --secondary:#52796F;
+    --bglight:#354F52;
 }
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 header{
     background-color: var(--bgDark);
+}
+.container{
+    padding: 0 15px;
 }
 header nav .left a{
     color: var(--white);
@@ -32,6 +35,94 @@ header nav .logo{
     margin-top: -1rem;
     font-size: 50px;
 }
-.hero .left .img{
+.hero{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.hero .left img{
+    width: 400px;
     border-radius: 5rem;
+    margin-left: 10rem;
+}
+.hero .right{
+    color: var(--white);
+    margin: 0 auto;
+
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+.hero .right h2{
+    font-size: 1.6rem;
+    color: var(--pimary);
+    margin-bottom: 1rem;
+}
+.hero .right h1>span{
+    color: var(--pimary);
+}
+.hero .right p{
+    line-height: 2;
+    margin:2rem;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--pimary);
+    background-color: var(--bgDark);
+    border: 2px solid var(--pimary);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+.btn:hover{
+    background-color: var(--pimary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+
+section{
+    background-color: var(--bgDark);
+    padding: 6rem;
+}
+section .right{
+    margin-left:10rem;
+   
+}
+section .left{
+    margin-left: 50px;
+}
+section .left>img{
+    border-radius: 5rem;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--white);
+}
+section.about h1>span{
+    color: var(--pimary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+section.about p{
+    color: var(--secondary);
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+section.about .socials>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.25rem;
+    
 }
