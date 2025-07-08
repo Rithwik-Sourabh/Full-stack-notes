@@ -12,35 +12,37 @@
 //     listTasks(): Lists all tasks, showing completed ones differently.
 
 function createTodoList() {
-  let tasks = [];
- 
-  
-  function addTask(work) {
-    return tasks.push({task:work, isCompleted:false})
-  }
+    let tasks = [];
 
-  function removeTask(work) {
-    // Homework
-    // splice method
-  }
 
-  function markComplete(work) {
-     let index = tasks.findIndex(singleTask=>singleTask.task === work)
-     tasks[index].isCompleted = true
-  }
+    function addTask(work) {
+        return tasks.push({ task: work, iscomplete: false })
+    }
 
-  function listTasks() {
-    console.log(tasks)
-  }
+    function removeTask(work) {
+        // Homework
+        // splice method
+        let index = tasks.findIndex(t => t.tasks === work);
+        tasks.splice(index-1, 1);
+    }
 
- 
+    function markComplete(work) {
+        let index = tasks.findIndex(singleTask => singleTask.task === work)
+        tasks[index].iscomplete = true
+    }
 
-  return {
-    addTask,
-    removeTask,
-    markComplete,
-    listTasks
-  };
+    function listTasks() {
+        console.log(tasks);
+    }
+
+
+
+    return {
+        addTask,
+        removeTask,
+        markComplete,
+        listTasks
+    };
 
 
 }
@@ -49,10 +51,10 @@ const todo = createTodoList();
 todo.addTask("Buy groceries");
 todo.addTask("Do Laundry");
 todo.addTask("Clean room");
- todo.listTasks();
+todo.listTasks();
 // console.log("-----");
 todo.markComplete("Do Laundry");
- todo.listTasks();
+todo.listTasks();
 // console.log("-----");
-// todo.removeTask("Do laundry");
-// todo.listTasks();
+todo.removeTask("Do laundry");
+todo.listTasks();

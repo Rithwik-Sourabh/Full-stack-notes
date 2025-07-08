@@ -1,9 +1,9 @@
 const students = [
-  { name: "Alice", score: 92 },
-  { name: "Bob", score: 80 },
-  { name: "Charlie", score: 60 },
-  { name: "Sumit", score: 97 },
-  { name: "Mrinal", score: 10 },
+    { name: "Alice", score: 92 },
+    { name: "Bob", score: 80 },
+    { name: "Charlie", score: 60 },
+    { name: "Sumit", score: 97 },
+    { name: "Mrinal", score: 10 },
 ];
 
 // "A" (90-100)
@@ -20,16 +20,16 @@ const students = [
 // }
 
 function categorizeStudents(studentList) {
-    const categories={A: [], B: [], c: []};
+    const categories = { A: [], B: [], c: [] };
     //this variable stores Array objects to store names of respective categories
-    for(let i=0; i<studentList.length; i++){
-        if(studentList[i].score>=90){
+    for (let i = 0; i < studentList.length; i++) {
+        if (studentList[i].score >= 90) {
             categories.A.push(studentList[i].name);
         }
-        else if(studentList[i].score>=75){
+        else if (studentList[i].score >= 75) {
             categories.B.push(studentList[i].name);
         }
-        else{
+        else {
             categories.c.push(studentList[i].name);
         }
     }
