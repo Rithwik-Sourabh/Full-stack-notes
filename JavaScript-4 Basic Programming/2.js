@@ -5,7 +5,9 @@
 // Approach: Think of a way to convert the string into an array of words.
 
 function reverseWords(sentence) {
-     let words=  sentence.split(" ")
+     let words=  sentence.split(" ")//here I am asking js to split the characters when ever it
+                                    // encounters space using the key word "split" and make a array
+                                    // of words
      console.log(words)
 
 
@@ -15,7 +17,8 @@ function reverseWords(sentence) {
            reversedArr.push(words.pop())
      }
 
-     return reversedArr.join(" ")
+     return reversedArr.join(" ")//here I am asking js to join the characters when ever it
+                                // encounters space using the key word "join" and make it into a sting
 
 
 }
