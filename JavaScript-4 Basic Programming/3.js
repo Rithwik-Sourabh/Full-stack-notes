@@ -21,6 +21,7 @@ const students = [
 
 function categorizeStudents(studentList) {
     const categories={A: [], B: [], c: []};
+    //this variable stores Array objects to store names of respective categories
     for(let i=0; i<studentList.length; i++){
         if(studentList[i].score>=90){
             categories.A.push(studentList[i].name);
