@@ -20,19 +20,19 @@ const students = [
 // }
 
 function categorizeStudents(studentList) {
-  const categories = { A: [], B: [], C: [] };
-
-  for (let i = 0; i < studentList.length; i++) {
-    if (studentList[i].score >= 90) {
-      categories.A.push(studentList[i].name);
-    } else if (studentList[i].score >= 75) {
-      categories.B.push(studentList[i].name);
-    } else {
-      categories.C.push(studentList[i].name);
+    const categories={A: [], B: [], c: []};
+    for(let i=0; i<studentList.length; i++){
+        if(studentList[i].score>=90){
+            categories.A.push(studentList[i].name);
+        }
+        else if(studentList[i].score>=75){
+            categories.B.push(studentList[i].name);
+        }
+        else{
+            categories.c.push(studentList[i].name);
+        }
     }
-  }
-
-  return categories;
+    return categories;
 }
 
 console.log(categorizeStudents(students));
