@@ -1,0 +1,37 @@
+:root{
+    --pimary:#819595;
+    --bgDark: #000000;
+    --white:#B1B6A6;
+    --secondary:#7F9183;
+    --bglight:#B8B8AA;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--bgDark);
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+header nav .left a:hover{
+    color: var(--pimary);
+}
+header nav{
+    padding: 2rem;
+    margin-left: 10rem; ;
+}
+header nav .logo{
+    margin-right: 3rem;
+    margin-top: -1rem;
+    font-size: 50px;
+}
+.hero .left .img{
+    border-radius: 5rem;
+}
