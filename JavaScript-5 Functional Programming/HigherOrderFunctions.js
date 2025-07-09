@@ -1,6 +1,9 @@
 let myRadiusArray = [2, 3, 4, 5, 8];
 
-function calculate(radiusArr, cb) {
+function calculate(radiusArr, cb) {//Here calculate becomes the higher order function
+                                   //Higher order function is a function that can tale a call-back
+                                  //which can execute a call-back and which can return a value from 
+                                  //a call-back
     let result = [];
 
     for (let i = 0; i < radiusArr.length; i++) {
