@@ -25,8 +25,17 @@ console.log(finalAmount);
 
 
 let finalSum = cartPrices.reduce(function(acc , value){
-    return  acc = acc*value
+    return  acc = acc+value
+            // 0 = 0+1 = 1
+            // 1 = 1+2 = 3
+            // 3 = 3+3 = 6
+            // 6 = 6+4 = 10
+            // 10 =10+5 = 15
+            // 15
             
-}, 0)
+}, 0)//here the accumulator should be initialised after the
+    //internal or the call back funtion is completed in this case it is "0"
+    //in the reduce function we have to give to parameters that is accumulator and the value
+
 
 console.log(finalSum)
