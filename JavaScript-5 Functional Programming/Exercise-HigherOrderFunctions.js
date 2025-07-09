@@ -27,6 +27,15 @@ function calculateArea(radiusArr) {
 
   return result;
 }
+/*All ove here the the structure of the code is same that is 
+function calculateArea(radiusArr) {
+  let result = [];
+  for (let i = 0; i < radiusArr.length; i++) {
+    result.push(3.14 * radiusArr[i] * radiusArr[i]);
+  }
+  return result;
+  to avoid this we can use DRY:which is "Don't repeat your slef"
+}*/
 
 function calculateDiameter(radiusArr) {
   let result = [];
