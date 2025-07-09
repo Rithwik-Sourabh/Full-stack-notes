@@ -1,9 +1,9 @@
 :root{
-    --pimary:#84A98C;
-    --bgDark: #2F3E46;
-    --white:#CAD2C5;
-    --secondary:#52796F;
-    --bglight:#354F52;
+    --pimary:#00A8E8;
+    --bgDark: #00171F;
+    --white:#FFFFFF;
+    --secondary:#007EA7;
+    --bglight:#003459;
 }
 *{
     padding: 0;
