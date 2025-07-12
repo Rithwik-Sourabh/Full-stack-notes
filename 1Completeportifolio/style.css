@@ -12,6 +12,7 @@
 }
 header{
     background-color: var(--bgDark);
+    background: linear-gradient(#00171F,#003459)
 }
 .container{
     padding: 0 15px;
@@ -85,9 +86,10 @@ header nav .logo{
 
 
 
-section{
-    background-color: var(--bgDark);
+section.about{
+    background-color: var(--bglight);
     padding: 6rem;
+     background: linear-gradient(#003459, #00171F)
 }
 section .right{
     margin-left:10rem;
@@ -125,4 +127,41 @@ section.about .socials>a{
     justify-content: center;
     margin-right: 1.25rem;
     
+}
+section.services{
+    background-color: var(--bgDark);
+}
+section.services .services-head{
+color: var(--white);
+text-align: center;
+margin-bottom: 1rem;
+line-height: 1.5;
+}
+.services-head+p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: 400;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+}
+section.services .card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3;
+}
+section.services .card-grid .card{
+   background: linear-gradient(#00171F, #FFFFFF);
+    margin: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;;
+}
+section.services .card-grid .card img{
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
