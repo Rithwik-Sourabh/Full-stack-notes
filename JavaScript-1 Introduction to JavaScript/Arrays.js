@@ -57,5 +57,5 @@ console.log(arr1)
 
 let arr2 = arr1.splice(0 ,3)
 
-console.log(arr1) // [20 , 70]
-console.log(arr2) // [30 , 40 , 50 , 60]
+console.log(arr1) // [50, 60, 70, 400]
+console.log(arr2) // [20, 30, 40]
